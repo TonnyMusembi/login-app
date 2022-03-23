@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DefaultController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserDetailsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/about' ,'App\Http\Controllers\DefaultController@about');
 Route::get('/login' ,[LoginController::class,'addnames']);
 
 Route::get('/logins' ,[LoginController::class,'showlogins']);
+Route::post('/save',[UserDetailsController::class ,'save']);
+

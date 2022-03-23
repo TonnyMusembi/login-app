@@ -18,18 +18,23 @@
 <div class="m-5">
     <div class="card">
     <div class="card-body p-5">
-        <form  action="" >
+        @if (@isset($success))
+
+        <p>{{$success}}</p>
+
+        @endif
+        <form method="POST" action="/save">
             @csrf
             <div class="form-group">
 <label for="username">Username</label>
-<input type="text" class="form-control " name="username" id="">
+<input type="text" class="form-control " name="user_name" id="">
             </div>
         {{-- </form> --}}
 
 
             <div class="form-group">
 <label for="username">Full Names</label>
-<input type="text" class="form-control " name="Full Names" id="">
+<input type="text" class="form-control " name="full_names" id="">
             </div>
         {{-- </form> --}}
 
@@ -38,7 +43,7 @@
 <input type="text" class="form-control " name="Id" id="">
             </div>
             <br>
-<button class=" btn btn-primary">Save Button</button>
+<button class="btn btn-primary">Save Button</button>
         </form>
     {{-- </div>
     <div>
