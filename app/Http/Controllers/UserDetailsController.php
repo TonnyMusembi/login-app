@@ -12,7 +12,9 @@ class UserDetailsController extends Controller
     public function save(Request $request)
     {
 dd($request->all());
-// $UserDetails = new UserDetails;
+
+
+//  $UserDetails = new UserDetails;
 
 // $UserDetails->user_name=$request->use_rname;
 // $UserDetails->full_names=$request->fullnames;
@@ -21,6 +23,10 @@ dd($request->all());
 // $UserDetails->save();
 
 // return back()->with(['success'=>'saved']);
+
+
+    }
+    public function show($id){
 
     }
 }

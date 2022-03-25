@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get( 'data',[ DummyAPI::class,'getData']);
+Route::resource('Company', App\Http\Controllers\CompanyNameController::class);
