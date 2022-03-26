@@ -10,9 +10,9 @@
 <body>
 {{-- <h1>Welcome</h1> --}}
 
-<div class="container">
+<div class="container auto-match">
     <div class="m-5">
-        <h1 class="alert alert-success">Welcome</h1>
+        <h1 class="alert alert-success">Account</h1>
     </div>
 
 <div class="m-5">
@@ -21,7 +21,6 @@
         @if (@isset($success))
 
         <p>{{$success}}</p>
-
         @endif
         <form method="POST" action="/save">
             @csrf
@@ -30,7 +29,6 @@
 <input type="text" class="form-control " name="user_name" id="">
             </div>
         {{-- </form> --}}
-
 
             <div class="form-group">
 <label for="username">Full Names</label>

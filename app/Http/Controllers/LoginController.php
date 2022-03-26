@@ -25,4 +25,8 @@ class LoginController extends Controller
     public function showlogins(){
         return view('logins')->with(['data'=>Login::all()]);
     }
+
+    public function edit($delete){
+
+    }
 }

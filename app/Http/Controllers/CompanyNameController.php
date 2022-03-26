@@ -93,4 +93,5 @@ class CompanyNameController extends Controller
         $company->delete();
         return response()->json('Company deleted!');
     }
+    
 }
