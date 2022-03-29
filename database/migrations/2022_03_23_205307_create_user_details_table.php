@@ -32,4 +32,5 @@ class CreateUserDetailsTable extends Migration
     {
         Schema::dropIfExists('user_details');
     }
+   
 }

@@ -21,6 +21,7 @@
         @if (@isset($success))
 
         <p>{{$success}}</p>
+
         @endif
         <form method="POST" action="/save">
             @csrf
@@ -29,6 +30,7 @@
 <input type="text" class="form-control " name="user_name" id="">
             </div>
         {{-- </form> --}}
+
 
             <div class="form-group">
 <label for="username">Full Names</label>
